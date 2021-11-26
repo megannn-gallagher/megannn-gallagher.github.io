@@ -131,3 +131,26 @@ footer > a.footer-left-link {
 footer > a.footer-right-link {
     color: #6B97D9;
 }
+
+.audit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+
+    position: absolute;
+    width: 125px;
+    height: 55px;
+    left: 1137px;
+    top: 16px;
+
+    color: black;
+    text-decoration-line: none;
+    background: #6B97D9;
+    border: 1px solid #6B97D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
