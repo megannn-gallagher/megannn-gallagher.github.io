@@ -2,6 +2,9 @@
 <html lang="en-gb">
 
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <style>
         </style>
         <link rel="stylesheet" href="companyName.css" />
@@ -20,26 +23,75 @@
         </div>
 
         <div>
+            <button onclick="report()" style="padding: 5px" class="companypage-positiveaction-shield">
+                <span>
+                    <i class="bi-shield-exclamation"></i>
+                </span>
+            </button>
             <p class="companypage-positiveactions">Positive Actions</p>
         </div>
 
         <div>
+            <button onclick="report()" style="padding: 5px" class="companypage-negativeaction-shield">
+                <span>
+                    <i class="bi-shield-exclamation"></i>
+                </span>
+            </button>
             <p class="companypage-negativeactions">Negative Actions</p>
         </div>
 
         <div>
+            <button onclick="report()" style="padding: 5px" class="companypage-news-shield">
+                <span>
+                    <i class="bi-shield-exclamation"></i>
+                </span>
+            </button>
             <p class="companypage-news">News</p>
         </div>
         
         <div>
+            <button onclick="report()" style="padding: 5px" class="companypage-overallrating-shield">
+                <span>
+                    <i class="bi-shield-exclamation"></i>
+                </span>
+            </button>
+            
             <p class="companypage-overallrating">Overall Rating</p>
             <span class="dot">32</span>
             <p class="companypage-poor">Poor</p>
         </div>
 
         <div>
+            <button onclick="report()" style="padding: 5px" class="companypage-c02-shield">
+                <span>
+                    <i class="bi-shield-exclamation"></i>
+                </span>
+            </button>
+
             <p class="companypage-co2contributions"> C02 Contributions</p>
             <img src="Images/first-line.png" alt="Logo" class="companypage-line">
+        </div>
+
+        <div>
+            <script>
+                function report() {
+                    (async () => {
+
+                    const { value: text } = await swal({
+                    input: 'textarea',
+                    inputPlaceholder: 'Tell us what you would like to report...',
+                    inputAttributes: {
+                        'aria-label': 'Tell us what you would like to report...'
+                    },
+                    showCancelButton: true,
+                    confirmButtonText: 'Report'
+                    })
+
+                    if (text) {
+                        swal(text)
+                    }})()
+                }
+            </script>
         </div>
     </body>
 

@@ -141,7 +141,7 @@
     width: 173px;
     height: 30px;
     left: 117px;
-    top: 275px;
+    top: 280px;
 
     font-family: Roboto;
     font-style: normal;
@@ -157,7 +157,7 @@
     width: 184px;
     height: 38px;
     left: 602px;
-    top: 275px;
+    top: 280px;
 
     -family: Roboto;
     font-style: normal;
@@ -173,7 +173,7 @@
     width: 66px;
     height: 28px;
     left: 1151px;
-    top: 275px;
+    top: 280px;
 
     font-family: Roboto;
     font-style: normal;
@@ -182,4 +182,44 @@
     line-height: 28px;
 
     color: #000000;
+}
+
+.companypage-positiveaction-shield {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 299px;
+    top: 305px;
+}
+
+.companypage-negativeaction-shield {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 780px;
+    top: 305px;
+}
+
+.companypage-news-shield {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 1232px;
+    top: 305px;
+}
+
+.companypage-c02-shield {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 400px;
+    top: 650px;
+}
+
+.companypage-overallrating-shield {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 1266px;
+    top: 635px;
 }
