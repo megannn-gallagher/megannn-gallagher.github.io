@@ -1,53 +1,49 @@
+html {
+    font-family: "Roboto", serif;
+}
+
 .title {
     position: absolute;
     width: 513px;
     height: 93px;
-    left: 181px;
+    left: 725px;
     top: 0px;
     font-size: 100px;
-    color: lightskyblue;
-    font-family: "Roboto", serif;
 }
 
 .reports {
     position: absolute;
     width: 513px;
     height: 93px;
-    left: 10px;
+    left: 100px;
     top: 250px;
     font-size: 25px;
-    color: black;
-    font-family: "Roboto", serif;
 }
 
 .title2{
     position: absolute;
     width: 513px;
     height: 93px;
-    left: 375px;
+    left: 850px;
     top: 300px;
     font-size: 45px;
-    color: black;
-    font-family: "Roboto", serif;
 }
 
 .accusations {
     position: absolute;
     width: 513px;
     height: 93px;
-    left: 250px;
+    left: 700px;
     top: 450px;
     text-align: center;
     font-size: 40px;
-    color: black;
-    font-family: "Roboto", serif;
 }
 
 .approve {
     position: absolute;
     width: 225px;
     height: 3000px;
-    left: 137px;
+    left: 437px;
     top: 780px;
     padding: 0px 16px;
     display: block;
@@ -55,10 +51,18 @@
 
 .reject {
     position: absolute;
-    width: 225px;
+    width: 2225px;
     height: 3000px;
-    left: 837px;
+    left: 1200px;
     top: 780px;
     padding: 0px 16px;
     display: block;
+}
+
+.auditpage-logo {
+    position: absolute;
+    width: 200px;
+    height: 240px;
+    left: 1600px;
+    top: 25px;
 }
