@@ -1,3 +1,5 @@
+// Keep the logged-in status in sessionStorage (not local storage)
+// so that it'll reset when the storage ends, simulating logout.
 
 const loginPage = document.getElementById("login-page");
 const loginButton = document.getElementById("login-form-submit");
@@ -8,7 +10,10 @@ loginButton.addEventListener("click", (e) => {
     const username = loginPage.username.value;
     const password = loginPage.password.value;
 
-    if (username === "megan" && password === "gal") {
+    if (username.length != 0 && password.length != 0) {
+        // Expire after 30 mins (1 day divided by 48 half hours)
+        Cookies.set('logged-in', 'true', { expires: (1/48) });
+        
         // Keep the alert box showing for longer than the time
         // to redirect so that the alert box does not disappear
         Swal.fire({
@@ -20,10 +25,11 @@ loginButton.addEventListener("click", (e) => {
           })
 
         setTimeout(function(){
-            location.href = "dashboard.html"
+            location.href = "index.html"
         }, 3000); 
     } else {
-        // Show the error msg
+        // Expire after 30 mins (1 day divided by 48 half hours)
+        Cookies.set('logged-in', 'false', { expires: (1/48) });
         loginErrorMsg.style.opacity = 1;
     }
 })
