@@ -9,9 +9,21 @@ loginButton.addEventListener("click", (e) => {
     const password = loginPage.password.value;
 
     if (username === "megan" && password === "gal") {
-        alert("You have successfully logged in.");
-        location.href="dashboard.html"
+        // Keep the alert box showing for longer than the time
+        // to redirect so that the alert box does not disappear
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Logged in!',
+            showConfirmButton: false,
+            timer: 3500
+          })
+
+        setTimeout(function(){
+            location.href = "dashboard.html"
+        }, 3000); 
     } else {
+        // Show the error msg
         loginErrorMsg.style.opacity = 1;
     }
 })
