@@ -65,6 +65,7 @@
     height: 28px;
     left: 1111px;
     top: 611px;
+    margin-bottom:160px !important;
 
     font-family: Roboto;
     font-style: normal;
@@ -86,7 +87,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
-    line-height: 75px;
+    line-height: 172px;
     border-radius: 50%;
     text-align: center;
 
@@ -149,8 +150,81 @@
     font-size: 24px;
     line-height: 28px;
 
+    border: blue;
     color: #000000;
 }
+
+.outline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 54px;
+    top: 258px;
+
+    background: #FFFFFF;
+    border: 1px solid #6B97D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline-style: solid; 
+    outline-color:#6B97D9;
+}
+
+.outline2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 544px;
+    top: 270px;
+
+    background: #FFFFFF;
+    border: 1px solid #6B97D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline-style: solid; 
+    outline-color:#6B97D9;
+}
+
+.news-outline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1034px;
+    top: 270px;
+
+    background: #FFFFFF;
+    border: 1px solid #6B97D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline-style: solid; 
+    outline-color:#6B97D9;
+}
+
+.co2-outline {
+    position: absolute;
+    width: 790px;
+    height: 302px;
+    left: 54px;
+    top: 599px;
+}
+
 
 .companypage-negativeactions {
     position: absolute;
