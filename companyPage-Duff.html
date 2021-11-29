@@ -4,20 +4,28 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="Styles/companyName.css" />
+        <script src="Scripts/js.cookie.min.js"></script>
+        <script src="Scripts/login-buttons.js"></script>
     </head>
 
     <body>
         <div>
             <a id="login-button" class="login-button" href="login.html">Log In</a>
             <a id="signup-button" class="signup-button" href="signup.html">Sign Up</a>
+            <a id="audit-button" class="audit-button" href="audit.html">Audit</a>
         </div>
 
         <img src="Images/Logo.png" alt="Logo" class="companypage-logo">
 
         <div class="companypage-companyName">
-            <h1>Company Name</h1>
+            <h1>Duff Beer</h1>
+        </div>
+        
+        <div>
+            <img src="Images/Duff.png" class="companypage-duff-logo">
         </div>
 
         <div class="outline" style="position:relative">
@@ -27,6 +35,9 @@
                     <i class="bi-shield-exclamation"></i>
                 </span>
             </button>
+            <ul>
+                <li>Donated $500,000 to an animal welfare charity.</li>
+            </ul>
         </div>
 
         <div class="outline2">
@@ -36,6 +47,10 @@
                     <i class="bi-shield-exclamation"></i>
                 </span>
             </button>
+            <ul>
+                <li>Aims advertisements of alcohol at children</li>
+                <li>CEO refuses to acknowledge global warming or take action to reduce Co2 emissions.</li>
+            </ul>
         </div>
 
         <div class="news-outline">
@@ -45,6 +60,10 @@
                     <i class="bi-shield-exclamation"></i>
                 </span>
             </button>
+            <ul>
+                <li>Profits increased by 4 million USD compared to last financial year.</li>
+                <li>Job cuts at Springfield beer factory.</li>
+            </ul>
         </div>
         
         <div>
@@ -60,13 +79,13 @@
         </div>
 
         <div>
-            <button onclick="report()" style="padding: 5px" class="companypage-c02-shield">
+            <button onclick="report()" class="companypage-c02-shield" style="padding: 5px;">
                 <span>
                     <i class="bi-shield-exclamation"></i>
                 </span>
             </button>
-
             <p class="companypage-co2contributions"> C02 Contributions</p>
+
             <img src="Images/first-line.png" alt="Logo" class="companypage-line">
         </div>
 
