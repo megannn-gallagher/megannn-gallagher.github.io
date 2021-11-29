@@ -5,13 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
         <link rel="stylesheet" href="Styles/login-page.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script defer src="Scripts/login-page.js"></script>
+
+        <style>
+          .login-logo {
+            width: 25%;
+            height: auto;
+          }
+        </style>
       </head>
       
       <body>
         <main id="main-holder">
           <h1 id="login-header">Login</h1>
-          
+          <img src="Images/Logo.png" alt="Logo" class="login-logo">
           <div id="login-error-msg-holder">
             <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
           </div>
