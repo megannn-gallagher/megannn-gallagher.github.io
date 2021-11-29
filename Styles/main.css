@@ -2,7 +2,6 @@ html {
     font-family: "Roboto", serif;
 }
 
-
 .homepage-logo {
     position: absolute;
     width: 250px;
@@ -125,10 +124,40 @@ footer {
 }
 
 footer > a.footer-left-link {
+    /* Contributor code of conduct */
+
+    position: absolute;
+    width: 309px;
+    height: 33px;
+    left: 225px;
+    top: 30px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+
     color: #6B97D9;
 }
 
 footer > a.footer-right-link {
+    /* Reliable information policy */
+
+    position: absolute;
+    width: 309px;
+    height: 33px;
+    left: 1000px;
+    top: 30px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+
     color: #6B97D9;
 }
 
