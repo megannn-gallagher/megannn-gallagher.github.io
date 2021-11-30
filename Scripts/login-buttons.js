@@ -3,11 +3,15 @@ $( function() {
         document.getElementById("login-button").style.display = "none";
         document.getElementById("signup-button").style.display = "none";
         document.getElementById("audit-button").style.display = "";
+        document.getElementById("discussion-button").style.display = "";
+        document.getElementById("add-button").style.display = "";
      }    
      else {
         document.getElementById("login-button").style.display = "";
         document.getElementById("signup-button").style.display = "";
         document.getElementById("audit-button").style.display = "none";
+        document.getElementById("discussion-button").style.display = "";
+        document.getElementById("add-button").style.display = "none";
      }
 });
 
