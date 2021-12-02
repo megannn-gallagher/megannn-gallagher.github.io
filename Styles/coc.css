@@ -1,0 +1,16 @@
+h1, h2, p, #rules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    padding: 10px 0px 10px 0px;
+}
+
+.coc-logo {
+    position: absolute;
+    width: 58px;
+    height: 69px;
+    top: 10px;
+}
